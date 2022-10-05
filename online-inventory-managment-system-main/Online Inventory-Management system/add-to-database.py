@@ -125,4 +125,5 @@ root=Tk()
 b=Database(root)
 
 root.geometry("1366x768+0+0")
-
+root.title("Add in the inventory database")
+root.mainloop()
