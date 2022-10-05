@@ -68,7 +68,12 @@ class Database:
          self.id_e.place(x=380,y=370)
 
          #button to add to the database
-        
+         self.btn_add=Button(master,text='Add to Inventory Database',width=25,height=2,bg='steelblue',fg='green',command=self.get_items)
+         self.btn_add.place(x=520,y=420)
+
+         self.btn_clear=Button(master,text="Clear All Fields",width=18,height=2,bg='lightgreen',fg='red',command=self.clear_all)
+         self.btn_clear.place(x=350,y=420)
+            
           #text box for the log
          self.tbBox=Text(master,width=60,height=18)
          self.tbBox.place(x=750,y=70)
